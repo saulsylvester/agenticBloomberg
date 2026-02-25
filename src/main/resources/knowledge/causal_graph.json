@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "canonicalName": "Interest Rates",
+      "type": "POLICY_BODY",
+      "aliases": ["rates", "rate", "interest rates", "boe rates", "fed rates"]
+    },
+    {
+      "canonicalName": "Banks",
+      "type": "SECTOR",
+      "aliases": ["banks", "banking", "retail banks"]
+    },
+    {
+      "canonicalName": "Housebuilders",
+      "type": "SECTOR",
+      "aliases": ["housebuilders", "homebuilders", "builders", "housing"]
+    },
+    {
+      "canonicalName": "Oil",
+      "type": "COMMODITY",
+      "aliases": ["oil", "crude", "brent", "wti"]
+    },
+    {
+      "canonicalName": "Airlines",
+      "type": "SECTOR",
+      "aliases": ["airlines", "airline sector", "air carriers"]
+    },
+    {
+      "canonicalName": "Energy Producers",
+      "type": "SECTOR",
+      "aliases": ["energy producers", "oil producers", "energy sector"]
+    },
+    {
+      "canonicalName": "Exporters",
+      "type": "SECTOR",
+      "aliases": ["exporters", "export sector"]
+    },
+    {
+      "canonicalName": "Strong GBP",
+      "type": "COUNTRY",
+      "aliases": ["strong gbp", "strong pound", "gbp strength", "pound strength"]
+    }
+  ],
+  "links": [
+    {
+      "source": "Interest Rates",
+      "target": "Banks",
+      "direction": "POSITIVE",
+      "strength": 0.90,
+      "rationale": "Higher rates can improve net interest margins for many banks."
+    },
+    {
+      "source": "Interest Rates",
+      "target": "Housebuilders",
+      "direction": "NEGATIVE",
+      "strength": 0.90,
+      "rationale": "Higher mortgage costs can reduce housing demand."
+    },
+    {
+      "source": "Oil",
+      "target": "Airlines",
+      "direction": "NEGATIVE",
+      "strength": 0.95,
+      "rationale": "Fuel is a major cost line item for airlines."
+    },
+    {
+      "source": "Oil",
+      "target": "Energy Producers",
+      "direction": "POSITIVE",
+      "strength": 0.95,
+      "rationale": "Higher oil prices support producer revenues and cash flow."
+    },
+    {
+      "source": "Strong GBP",
+      "target": "Exporters",
+      "direction": "NEGATIVE",
+      "strength": 0.80,
+      "rationale": "A stronger pound can reduce exporter competitiveness abroad."
+    }
+  ]
+}
