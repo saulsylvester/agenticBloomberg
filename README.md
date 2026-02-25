@@ -1,3 +1,5 @@
+![Helios Screenshot](src/test/Screenshot.png)
+
 The goal is a **working MVP immediately on a single laptop, Java-only, zero budget.
 
 ---
